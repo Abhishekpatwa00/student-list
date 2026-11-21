@@ -1,19 +1,29 @@
 import { Button } from "@/components/ui/button"
+import StudentPage from "./students/page"
 
 export default function Page() {
   return (
     <div className="flex min-h-svh p-6">
       <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
-        <div>
-          <h1 className="font-medium">Project ready!</h1>
-          <p>You may now add components and start building.</p>
-          <p>We&apos;ve already added the button component for you.</p>
-          <Button className="mt-2">Button</Button>
-        </div>
-        <div className="font-mono text-xs text-muted-foreground">
-          (Press <kbd>d</kbd> to toggle dark mode)
-        </div>
+        <StudentPage/>
       </div>
     </div>
   )
 }
+
+// import mongoose from 'mongoose';
+
+// export async function connectToMongoDB() {
+//   try {
+//     await mongoose.connect("mongodb://<db_username>:KXIOKxExH9U73og5@ac-mhtg5ty-shard-00-00.chmbryk.mongodb.net:27017,ac-mhtg5ty-shard-00-01.chmbryk.mongodb.net:27017,ac-mhtg5ty-shard-00-02.chmbryk.mongodb.net:27017/?ssl=true&replicaSet=atlas-re7nly-shard-0&authSource=admin");
+//     console.log("You successfully connected to MongoDB!");
+//     return mongoose;
+//   } catch (err) {
+//     console.dir(err);
+//   }
+// }
+
+// // Call this only when your application terminates
+// export async function disconnectFromMongoDB() {
+//   await mongoose.connection.close();
+// }
