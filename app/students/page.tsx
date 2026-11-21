@@ -4,6 +4,9 @@ import { addStudent , deleteStudent } from '../actions/studentActions';
 
 import StudentCard from '@/components/studentcard';
 
+export const dynamic = 'force-dynamic';
+
+
 export default async function StudentPage() {
   await dbConnect();
 
