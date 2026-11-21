@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button"
 import StudentPage from "./students/page"
 
+export const dynamic = 'force-dynamic';
+
 export default function Page() {
   return (
     <div className="flex min-h-svh p-6">
