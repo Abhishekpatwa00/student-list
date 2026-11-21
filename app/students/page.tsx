@@ -60,11 +60,16 @@ export default async function StudentPage() {
                 </button>
 
       </form>
-      <div className="space-y-4 pt-4">
-              <h2 className="text-lg font-semibold">Enrolled Students ({students.length})</h2>
+      <div className="space-y-4  pt-4">
+        <h2 className="text-lg font-semibold">Enrolled Students ({students.length})</h2>
+        <div className=" w-full flex flex-wrap gap-2 ">
               {students.map((student) => (
-                 <StudentCard key={student._id} student={student} />
+
+
+                  <StudentCard key={student._id} student={student} />
+
               ))}
+        </div>
             </div>
     </main>
   );
