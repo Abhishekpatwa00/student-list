@@ -9,6 +9,7 @@ export default async function StudentPage() {
 
   // Fetch plain JS objects instead of heavy Mongoose documents
   const rawStudents = await Student.find({}).lean();
+  console.log(rawStudents)
   const students = rawStudents.map((s) => ({
      _id: String(s._id),
      name: s.name,
